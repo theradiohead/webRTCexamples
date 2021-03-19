@@ -34,6 +34,7 @@ const PlaySettingsForm = () => {
       {
         switch(playUrlParametersMap[paramKey])
         {
+          
           case "playSignalingURL":
             dispatch({type:PlaySettingsActions.SET_PLAY_SIGNALING_URL,signalingURL:savedValues[playUrlParametersMap[paramKey]]});
             break;
@@ -44,6 +45,7 @@ const PlaySettingsForm = () => {
             dispatch({type:PlaySettingsActions.SET_PLAY_STREAM_NAME,streamName:savedValues[playUrlParametersMap[paramKey]]});
             break;
           default:
+            
         }
       }
     }
@@ -71,6 +73,8 @@ const PlaySettingsForm = () => {
   return (
     <div className="col-md-4 col-sm-12" id="play-settings">
       <form id="play-settings-form">
+        {/*
+
         <div className="row">
           <div className="col-12">
             <div className="form-group">
@@ -87,6 +91,7 @@ const PlaySettingsForm = () => {
             </div>
           </div>
         </div>
+        
         <div className="row">
           <div className="col-6">
             <div className="form-group">
@@ -115,6 +120,7 @@ const PlaySettingsForm = () => {
             </div>
           </div>
         </div>
+        */}
         <div className="row">
           <div className="col-10">
             { !webrtcPlay.connected && 

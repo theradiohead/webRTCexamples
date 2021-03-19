@@ -15,9 +15,9 @@ const Nav = () => {
           <span></span>
         </li>
         <li className="nav-item page">
-          <a href="https://www.wowza.com/developer/webrtc/dev-view-play">
+        <Link to="/play">
             Play
-          </a>
+          </Link>
           <span></span>
         </li>
         <li className="nav-item page">

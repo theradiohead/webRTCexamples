@@ -2,9 +2,9 @@ import * as compositeSettingsActions from '../actions/compositeSettingsActions';
 
 const initialState = {
   layout: 0,
-  signalingURL: '',
-  applicationName: '',
-  streamName: '',
+  signalingURL: 'wss://6053385da1fcd.streamlock.net/webrtc-session.json',
+  applicationName: 'live',
+  streamName: 'stream',
   streamInfo: undefined,
   audioBitrate: '64',
   audioCodec: 'opus',

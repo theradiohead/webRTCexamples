@@ -1,9 +1,9 @@
 import * as PlaySettingsActions from '../actions/playSettingsActions';
 
 const initialState = {
-  signalingURL: '',
-  applicationName: '',
-  streamName: '',
+  signalingURL: 'wss://6053385da1fcd.streamlock.net/webrtc-session.json',
+  applicationName: 'live',
+  streamName: 'stream',
   playStart: false,
   playStarting: false,
   playStop: false,
@@ -12,6 +12,7 @@ const initialState = {
 
 const playSettingsReducer = (state = initialState, action) => {
   switch (action.type) {
+    
     case PlaySettingsActions.SET_PLAY_SIGNALING_URL:
       return { ...state, signalingURL:action.signalingURL };
     case PlaySettingsActions.SET_PLAY_APPLICATION_NAME:
@@ -25,6 +26,7 @@ const playSettingsReducer = (state = initialState, action) => {
       if (action.playStop != null) playFlagsState.playStop = action.playStop;
       if (action.playStopping != null) playFlagsState.playStopping = action.playStopping;
       return playFlagsState;
+      
     default:
       return state
   }

@@ -24,7 +24,8 @@ const CompositePublishSettingsForm = () => {
     for (let param in savedValues)
     {
       switch(param)
-      {
+      { 
+        /*
         case (compositePublishUrlParametersPrefix+'signalingURL'):
           dispatch({type:compositeSettingsActions.SET_COMPOSITE_SIGNALING_URL,signalingURL:savedValues[param]});
           break;
@@ -34,6 +35,7 @@ const CompositePublishSettingsForm = () => {
         case (compositePublishUrlParametersPrefix+'streamName'):
           dispatch({type:compositeSettingsActions.SET_COMPOSITE_STREAM_NAME,streamName:savedValues[param]});
           break;
+          */
         case (compositePublishUrlParametersPrefix+'audioBitrate'):
           dispatch({type:compositeSettingsActions.SET_COMPOSITE_AUDIO_BITRATE,audioBitrate:savedValues[param]});
           break;
@@ -72,6 +74,7 @@ const CompositePublishSettingsForm = () => {
 
   return (
     <form id="publish-settings-form">
+      {/*
       <div className="row">
         <div className="col-12">
           <div className="form-group">
@@ -116,6 +119,7 @@ const CompositePublishSettingsForm = () => {
           </div>
         </div>
       </div>
+      */}
       <div className="row">
         <div className="col-lg-6 col-sm-12">
           <div className="form-group">

@@ -15,8 +15,10 @@ const PublishSettingsForm = () => {
   return (
     <div className="col-md-4 col-sm-12" id="publish-settings">
       <form id="publish-settings-form">
+        
         <div className="row">
           <div className="col-12">
+            
             <div className="form-group">
               <label htmlFor="sdpURL">Signaling URL</label>
               <input type="text"
@@ -31,6 +33,7 @@ const PublishSettingsForm = () => {
             </div>
           </div>
         </div>
+        
         <div className="row">
           <div className="col-lg-6 col-sm-12">
             <div className="form-group">
